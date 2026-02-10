@@ -36,5 +36,6 @@ run: $(BIN)
 	qemu-system-riscv64 -machine virt -nographic \
 		-bios ../bootloader/rustsbi-qemu.bin \
 		-device loader,file=$(BIN),addr=0x80200000
+		-s -S 
 
 .PHONY: all clean run
