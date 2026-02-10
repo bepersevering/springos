@@ -4,7 +4,7 @@ CC = riscv64-unknown-elf-gcc
 LD = riscv64-unknown-elf-ld
 OBJCOPY = riscv64-unknown-elf-objcopy
 
-CFLAGS = -Wall -O2 -ffreestanding -nostdlib -march=rv64gc -mabi=lp64
+CFLAGS = -Wall -O2 -ffreestanding -nostdlib -march=rv64gc -mabi=lp64 -mcmodel=medany
 LDFLAGS = -nostdlib -T linker.ld
 
 SRCS = src/start.S src/main.c

@@ -5,6 +5,6 @@ _start:
 
     call main
 
-halt_looop:
-    wfi:
+halt_loop:
+    wfi
     j halt_loop
